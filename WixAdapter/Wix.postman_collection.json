@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "4625085c-9f0e-4cc2-aea1-d7b243405077",
+		"name": "Wix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Provision",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n            \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/provision",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"provision"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n            \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/provision",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"provision"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find (Schema)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"settings\": {\r\n            \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    },\r\n    \"schemaIds\": [\r\n        \"IoTModelX01\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/schemas/find",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"schemas",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list (Schema)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n            \"YOURKEY\": \"\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/schemas/list",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"schemas",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert (Data)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Yauthtenantname",
+						"value": "{{Yauthtenantname}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestContext\": {\r\n    \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n    \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n    \"settings\": {\r\n        \"secretKey\": \"mySecureSecret\"\r\n    },\r\n    \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n    \"role\": \"OWNER\"\r\n  },\r\n  \"collectionName\": \"car\",\r\n  \"itemId\": \"683bd643-3b08-4c24-acc2-b8b18d2d03d2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/data/insert/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"data",
+						"insert",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get (Data)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n            \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    },\r\n    \"collectionName\": \"car\",\r\n    \"item\": {\r\n        \"_id\": \"618159c7f70d1b7d45f1247b\",\r\n        \"_owner\": \"618159c7f70d1b7d45f1247b\",\r\n        \"make\": \"BMW\",\r\n        \"model\": \"i8\",\r\n        \"year\": 2020,\r\n        \"date_added\": {\r\n            \"$date\": \"2020-01-01T21:00:00.000Z\"\r\n        }\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/data/get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"data",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find (Data)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n             \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    },\r\n   \"collectionName\": \"car\",\r\n    \"filter\": {\r\n        \"operator\": \"$and\",\r\n        \"value\": [\r\n            {\r\n                \"operator\": \"$contains\",\r\n                \"fieldName\": \"make\",\r\n                \"value\": \"a\"\r\n            },\r\n            {\r\n                \"operator\": \"$gt\",\r\n                \"fieldName\": \"year\",\r\n                \"value\": 2018\r\n            }\r\n        ]\r\n    },\r\n    \"sort\": [\r\n        {\r\n            \"fieldName\": \"year\",\r\n            \"direction\": \"asc\"\r\n        }\r\n    ],\r\n    \"skip\": 0,\r\n    \"limit\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/data/find",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"data",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update (Data)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"settings\": {\r\n           \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    },\r\n    \"collectionName\": \"car\",\r\n    \"item\": {\r\n        \"model\": \"e\",\r\n        \"_id\": \"618159c7f70d1b7d45f1247b\",\r\n        \"_owner\": null,\r\n        \"casetype\": \"car\",\r\n        \"year\": \"2021\",\r\n        \"color\": \"s\",\r\n        \"casetitle\": \"Test\",\r\n        \"casestatus\": \"test\",\r\n        \"make\": \"d\",\r\n        \"casedescription\": \"a\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/data/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"data",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove (Data)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n            \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    },\r\n    \"collectionName\": \"car\",\r\n    \"itemId\": \"618159c7f70d1b7d45f1247b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/data/remove ",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"data",
+						"remove "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "count (Data)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestContext\": {\r\n        \"settings\": {\r\n            \"secretKey\": \"mySecureSecret\"\r\n        },\r\n        \"instanceId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"installationId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"memberId\": \"88a569e4-a59a-434d-90ce-6c90c00df194\",\r\n        \"role\": \"OWNER\"\r\n    },\r\n    \"collectionName\": \"car\",\r\n    \"filter\": {\r\n        \"operator\": \"$contains\",\r\n        \"fieldName\": \"make\",\r\n        \"value\": \"Hyundai\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44397/v1/data/count",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44397",
+					"path": [
+						"v1",
+						"data",
+						"count"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
